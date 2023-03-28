@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place of work</title>
+
+
+    <style>
+        input, textarea {
+            margin-top: 12px;
+        }
+        #res_type input {
+            margin-right: 24px;
+        }
+        .space {
+            height: 12px;
+        }
+        label {
+            font-weight: bold;
+        }
+        #res_type label {
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Please fill in the following details about your place of work.</h1>
+
+    <form action="workplace-form-handler.php" method="post">
+        <label for="full_name">Full name</label>
+        <input type="text" maxlength="35" name="full_name" placeholder="John Doe" id="full_name" required>
+       
+        <br/>
+        <label for="work_place">Address of workplace:</label>
+        <textarea name="address" id="work_place" placeholder="123 Main Rd, Cape Town" maxlength="100" required></textarea>
+      
+        <br/>
+        <label for="city">City:</label>
+        <textarea name="city" id="city" placeholder="Name of City" maxlength="100" required></textarea>
+
+        <br/>
+        <label for="hourly_wage">Hourly wage:</label>
+        <input type="text" maxlength="25" name="hourly_wage" placeholder="10000" id="hourly_wage" required>
+        <br/>
+    
+        <br/>
+        <label for="job start date">Job Start Date::</label>
+        <input type="text" maxlength="25" name="job start date" placeholder="YYYY/MM/DD" id="job start date" required>
+        <br/>
+
+        <br/>
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
